@@ -9,7 +9,7 @@ void main()
 	scanf("%d",& h);
 	printf("Input width of rectangle: ");
 	scanf("%d",& w);
-	a=l*w;
+	a=h*w;
 	printf("\nArea of Rectangle: %d",a);
 
 	getch();
