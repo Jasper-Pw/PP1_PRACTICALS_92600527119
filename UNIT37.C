@@ -10,22 +10,21 @@ void main()
 	scanf("%d",&q);
 	printf("Input Price: Rs. ");
 	scanf("%f",&p);
-
+	
+	tp=p*q;
 	if(tp>1000)
 	{
-		printf("\nDiscount 15%");
-		d=p*0.15;
+		d=tp*0.15;
 	}
 	else
 	{
-		printf("\nDiscount 10%");
-		d=p*0.10;
+		d=tp*0.10;
 	}
 
-	tp=p*q;
-	printf("\nTotal Price: %.2f",tp);
 	fp=p-d;
-	printf("\nPrice after discount: %.2f",fp);
+	printf("\nTotal Price: Rs. %.2f",tp);
+	printf("\nDiscount: Rs. %.2f",d);
+	printf("\nPrice after discount: Rs. %.2f",fp);
 
 	getch();
 }
